@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "552801242710",
+    "firebase_url": "https://split-banking.firebaseio.com",
+    "project_id": "split-banking",
+    "storage_bucket": "split-banking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552801242710:android:1e8b49b50fb815bbfb75f7",
+        "android_client_info": {
+          "package_name": "splitbanking.project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552801242710-n02eu4ukhpntvfbv06lqlhcn1aasfslr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "splitbanking.project",
+            "certificate_hash": "4e9757f6b50c86d0d62e07d83f91ef20b87331eb"
+          }
+        },
+        {
+          "client_id": "552801242710-ld6njd3klcb5ggac70t4vmdor9leo75s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_pXePBGvtf7SVC9rmfoa5udbJ4E9xEPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552801242710-ld6njd3klcb5ggac70t4vmdor9leo75s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tvTypeOfCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What type of card would you like to create?"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/personalBtn"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/holo_orange_light"
+            android:background="@drawable/rounded_button"
+            android:text="Personal"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_below="@+id/tvTypeOfCard"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <Button
+            android:id="@+id/sharedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:backgroundTint="@color/navy"
+            android:background="@drawable/rounded_button"
+            android:text="Shared"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:layout_below="@+id/personalBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/holo_orange_light"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        />
+
+</RelativeLayout>

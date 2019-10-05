@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:text="Create an account"
+            android:layout_marginBottom="40dp"
+            android:textStyle="bold"
+            android:textColor="@color/holo_orange_light"
+            />
+
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_below="@+id/tvCreateAccount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your username"
+            />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_below="@+id/usernameInput"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your password"
+            android:layout_marginTop="5dp"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passwordInput"
+            android:hint="Enter your email"
+            android:layout_marginTop="5dp"
+
+            />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailInput"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:layout_marginBottom="200dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/holo_orange_light"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

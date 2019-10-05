@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cardAttributeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/deleteCardBtn">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/tvCardName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Card"
+                android:textSize="32sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/tvCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card Number in 16 digit format"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/tvCardName"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tvCVV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Card's CVV"
+                android:textSize="20dp"
+                android:layout_below="@+id/tvCardNumber"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/tvExpDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Exp/Date/"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tvCVV"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tvLimitAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limit Amount: $$$"
+                android:background="@color/holo_orange_light"
+                android:textColor="@color/white"
+                android:layout_below="@id/tvExpDate"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:textSize="18dp"
+                android:padding="3dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tvSplitPercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Split Percentages"
+                android:layout_below="@+id/tvLimitAmount"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvSplitPercentage"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/deleteCardBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:layout_above="@id/navigationBar"
+        android:backgroundTint="@color/holo_orange_light"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:text="Delete Card"/>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigationBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/holo_orange_light"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:menu="@menu/navigation"
+        android:layout_alignParentBottom="true"
+        app:labelVisibilityMode="labeled"
+        />
+
+
+
+</RelativeLayout>

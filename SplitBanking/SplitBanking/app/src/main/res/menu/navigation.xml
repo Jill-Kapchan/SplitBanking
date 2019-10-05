@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_card"
+        android:icon="@drawable/ic_card_membership_black_24dp"
+        android:title="Cards"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/navigation_balance"
+        android:icon="@drawable/ic_money"
+        android:title="Balance"
+        android:enabled="true"
+        />
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/ic_notifications_active_black_24dp"
+        android:title="Notifications"
+        android:enabled="true">
+    </item>
+    <item
+        android:id="@+id/navigation_friends"
+        android:icon="@drawable/ic_recent_actors_black_24dp"
+        android:title="Friends"
+        android:enabled="true"
+        />
+
+</menu>

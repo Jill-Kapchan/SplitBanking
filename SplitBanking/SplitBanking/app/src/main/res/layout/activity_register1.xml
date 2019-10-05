@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:text="Create an account"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/holo_orange_light"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/fNameInput"
+            android:layout_below="@+id/tvCreateAccount"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your first name"
+            />
+
+        <EditText
+            android:id="@+id/mNameInput"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your middle name"
+            android:layout_below="@+id/fNameInput"
+
+            />
+
+        <EditText
+            android:id="@+id/lNameInput"
+            android:layout_below="@+id/mNameInput"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter your last name"
+            />
+
+
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lNameInput"
+            android:background="@drawable/rounded_button"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:text="Next"
+            android:layout_marginBottom="200dp"
+            android:backgroundTint="@color/holo_orange_light"
+            android:textColor="@color/white"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
